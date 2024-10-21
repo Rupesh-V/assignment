@@ -1,0 +1,100 @@
+.speaker-slider__card {
+    box-shadow: 4px 10px 24px 0px #0000001A;
+    text-align: center;
+    cursor: pointer;
+
+   
+    padding: 36px 21px 36px 21px;
+    gap: 16px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 1;
+
+  }
+  
+  .speaker-slider__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .speaker-slider__popover {
+    box-shadow: 4px 10px 24px 0px #0000001A;
+    padding: 36px 30px 36px 30px;
+    border-radius: 10px 0px 0px 0px;
+  }
+  .popover-name{
+    font-family: Metropolis;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+
+  }
+  .popover-subname{
+    font-family: Metropolis;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+
+  }
+  .popover-subname2{
+    font-family: Metropolis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+
+  }
+  .popover-content {
+    position: relative;
+  }
+  
+  .speaker-slider__popover-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .d-none {
+    display: none !important;
+  }
+  .speaker-slider__name{
+    font-family: Metropolis;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+
+  }
+  .speaker-slider__title{
+    font-family: Metropolis;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+
+  }
+  .bem-main-heading{
+    font-family: Metropolis;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+
+  }
+  .bem-main-para{
+    font-family: Metropolis;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+
+  }
+  .see-our-btn{
+    background: #003FB4;
+    padding: 13px 66px 13px 66px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+  }
+  

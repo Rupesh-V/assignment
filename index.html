@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speaker Slider</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Speaker Slider Section -->
+  <section class="speaker-slider container py-5">
+    <div class="container-fluid">
+        <div class="container p-0">
+            <div class="row text-center">
+                <div class="col-md-12 sec-header">
+                    <h2 class="bem-main-heading">View our Featured Speakers for the Event</h2>
+                    <p class="bem-main-para">Speakers are core contributors and industry thought leaders working at <span style="color: #003FB4;">companies</span> that push for innovation.</p>
+                </div>
+            </div>
+            <div class="speaker-slider__popover mb-5 d-none" id="speaker-details" style="position: relative;">
+                <button class="btn-close speaker-slider__popover-close"></button>
+                <div class="popover-content row">
+                    
+                    <div class="col-md-2">
+                        <img src="images/speaker3.png" alt="Speaker 3" class="speaker-slider__image" />
+                    </div>
+                    <div class="col-md-2">
+                        <h3 id="popover-name">John Doe</h3>
+                        <p class="popover-subname">Chief Technical Developer</p>
+                        <p class="popover-subname2">Specbee</p>
+                        <img src="images/social-icon1.png" class=""  alt="Social Icon1"/>
+                        <img src="images/social-icon2.png" class=""  alt="Social Icon2"/>
+                        <img src="images/social-icon3.png" class=""  alt="Social Icon3"/>
+                    </div>
+                    
+                    <div class="col-md-1" style="display: flex; justify-content: center; ">
+                        <div style="border: 1px solid #B7B7B7"></div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p id="popover-info">Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas.</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <div id="speakerCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" style="overflow: visible !important">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="speaker-slider__card" data-speaker-id="1">
+                          <img src="images/speaker1.png" alt="Speaker 1" class="speaker-slider__image" />
+                          <h2 class="speaker-slider__name">John Deo</h2>
+                          <p class="speaker-slider__title">Chief Marketing Officer</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="speaker-slider__card" data-speaker-id="2">
+                          <img src="images/speaker2.png" alt="Speaker 2" class="speaker-slider__image" />
+                          <h2 class="speaker-slider__name">Vicky</h2>
+                          <p class="speaker-slider__title">Chief Engagement Officer</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="speaker-slider__card" data-speaker-id="3">
+                          <img src="images/speaker3.png" alt="Speaker 3" class="speaker-slider__image" />
+                          <h2 class="speaker-slider__name">Rohan</h2>
+                          <p class="speaker-slider__title">Chief Technical Developer</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="speaker-slider__card" data-speaker-id="4">
+                          <img src="images/speaker4.png" alt="Speaker 4" class="speaker-slider__image" />
+                          <h2 class="speaker-slider__name">Karunakar</h2>
+                          <p class="speaker-slider__title">Chief Marketing Officer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="speaker-slider__card" data-speaker-id="5">
+                          <img src="images/speaker1.png" alt="Speaker 5" class="speaker-slider__image" />
+                          <h2 class="speaker-slider__name">Singh</h2>
+                          <p class="speaker-slider__title">Chief Technical Developer</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="speaker-slider__card" data-speaker-id="6">
+                          <img src="images/speaker2.png" alt="Speaker 6" class="speaker-slider__image" />
+                          <h2 class="speaker-slider__name">LeoDas</h2>
+                          <p class="speaker-slider__title">Chief Engagement Officer</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="speaker-slider__card" data-speaker-id="7">
+                          <img src="images/speaker3.png" alt="Speaker 7" class="speaker-slider__image" />
+                          <h2 class="speaker-slider__name">Parthiban</h2>
+                          <p class="speaker-slider__title">Chief Marketing Officer</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="speaker-slider__card" data-speaker-id="8">
+                          <img src="images/speaker4.png" alt="Speaker 8" class="speaker-slider__image" />
+                          <h2 class="speaker-slider__name">Gandhi</h2>
+                          <p class="speaker-slider__title">Chief Technical Developer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Add more carousel items (blocks of 4 speakers) as needed -->
+                </div>
+          
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#speakerCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#speakerCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="row d-flex justify-content-center pt-4">
+                <div class="col-md-3">
+                    <a href="" class="btn see-our-btn mt-2" class="text-decoration-none">See the Program</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Speaker Details Popover (hidden by default) -->
+  <div class="speaker-slider__popover d-none" id="speaker-details">
+    <div class="popover-content">
+      <button class="btn-close speaker-slider__popover-close"></button>
+      <h3 id="popover-name"></h3>
+      <p id="popover-info"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
